@@ -1,0 +1,13 @@
+var arr1 = ['hi','iam','living','in','chennai'];
+var arr2 = [];
+var temp ;
+var Strcaps = function(arr1)
+{
+    for(var i=0;i<arr1.length;i++)
+    {
+        temp = arr1[i].charAt(0).toUpperCase() + arr1[i].slice(1);
+        arr2[i] = temp
+    }
+    return(arr2)
+}
+console.log(Strcaps(arr1));

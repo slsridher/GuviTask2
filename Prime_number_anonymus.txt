@@ -1,0 +1,30 @@
+var arr = [1,2,3,4,5,6,7,8,9,10]
+var primefunc=function(n)
+{
+  if (n===1)
+  {
+    return
+  }
+  else if(n === 2)
+  {
+    return(n);
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return
+      }
+    }
+    return (n);  
+  }
+}
+for (var i= 0;i<arr.length;i++)
+{
+    var printno=primefunc(arr[i]);
+    if(printno !== undefined)
+    {
+    console.log(printno);
+    }
+}

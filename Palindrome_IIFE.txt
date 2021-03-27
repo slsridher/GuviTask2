@@ -1,0 +1,14 @@
+var arr = [11,21,33,42,55,66,717,8888,95,101]
+for (var i= 0;i<arr.length;i++)
+{(function(n)
+{
+ str = String(n); 
+ revstr = str.split("")
+ revstr= revstr.reverse()
+ revstr=revstr.join("")
+ if (str === revstr)
+ {
+     console.log(str)
+ }
+})(arr[i])
+}

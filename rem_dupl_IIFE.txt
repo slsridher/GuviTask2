@@ -1,0 +1,18 @@
+var arr1 = [1,3,3,5,7,9,3,11,13,13];
+var arrstr =  arr1.sort();
+var arr2 = [];
+(function(arr2,arrstr)
+{
+for (var i=0;i<arrstr.length;i++)
+{
+    if((i !==0) &&(arrstr[i] != arrstr[i-1]))
+    {
+        arr2.push(arrstr[i])
+    }
+    else if (i === 0 )
+    {
+        arr2.push(arrstr[i])
+    }
+}
+console.log(arr2)
+})(arr2,arrstr);
